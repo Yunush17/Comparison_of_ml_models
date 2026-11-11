@@ -756,10 +756,10 @@ else:
                 color_discrete_sequence=PALETTE,
             )
             fig_multi.update_layout(
-                **get_plotly_layout(height=420),
-                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+                    height=420,
+                    margin=dict(l=20, r=20, t=40, b=20), # Add your preferred layout defaults here
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
             )
-            st.plotly_chart(fig_multi, use_container_width=True)
 
     # -----------------------------------------------------------------------------
     # TAB 2: VISUAL ANALYTICS
